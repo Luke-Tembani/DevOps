@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pharmacy.</string>
+    <string name="splash_text">One Stop\nPharmaceutical\nCentre</string>
+    <string name="login_heading">Let\'s Login</string>
+    <string name="register_heading">Let\'s Register</string>
+    <string name="forgot_pass">Forgot Password ?</string>
+    <string name="register_link">Don\'t have an account? Sign Up</string>
+    <string name="login_link">Already have an account? Sign In</string>
+    <string name="splash_note">Get Your Medication\nDelivered To You\nAnonymously</string>
+</resources>

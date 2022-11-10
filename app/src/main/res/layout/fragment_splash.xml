@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_texture_left"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineLeftTextture"
+        app:layout_constraintDimensionRatio="1:3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineEllipseLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEllipseRight"
+        app:layout_constraintTop_toTopOf="@id/guidelineEllipseTop"
+        app:layout_constraintBottom_toTopOf="@id/guidelineEllipseBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background ="@drawable/ellips"
+        />
+    
+<TextView
+    android:id ="@id/splashHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize ="35sp"
+    app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
+    app:layout_constraintEnd_toEndOf="@id/guidelineEllipseRight"
+    app:layout_constraintTop_toTopOf="@id/guidelineEllipseTop"
+    app:layout_constraintBottom_toTopOf="@id/guidelineEllipseBottom"
+    android:text ="@string/splash_text"
+    style="@style/h4"
+    android:textAlignment ="center"
+    android:gravity ="center"
+    />
+
+    <TextView
+        android:id ="@id/splash_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/splashHeader"
+        app:layout_constraintEnd_toEndOf="@+id/splashHeader"
+        app:layout_constraintTop_toBottomOf="@id/splashHeader"
+        android:text ="@string/splash_note"
+        android:textAlignment = "center"
+        style="@style/h2"
+        android:gravity ="center"
+
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src ="@drawable/ic_texture_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineLeftTextture"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="130dp"
+        android:id ="@+id/btnExplore"
+        android:layout_height="55dp"
+        style="@style/blueButtonStyle"
+       app:layout_constraintTop_toBottomOf="@+id/splash_note"
+        app:layout_constraintStart_toStartOf="@+id/splash_note"
+        app:layout_constraintEnd_toEndOf="@+id/splash_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text ="Explore"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftTextture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
